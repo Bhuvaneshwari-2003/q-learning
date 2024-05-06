@@ -37,18 +37,30 @@ The agent receives a reward of +1 for reaching the goal state (G). The agent rec
 ![image](https://github.com/Bhuvaneshwari-2003/q-learning/assets/94828604/3b303f6c-db23-49be-84da-888daa49f4be)
 
 
-## Q LEARNING ALGORITHM
+## Q LEARNING ALGORITHM:
+
 1.Initialize the Q-values arbitrarily for all state-action pairs.
+
 2.Repeat for each episode:
+
     *Initialize the starting state.
+    
     *Repeat for each step of episode:
+    
        *Choose action from state using policy derived from Q (e.g., epsilon-greedy).
+       
        *Take action, observe reward and next state.
-       *Choose action from next state using policy derived from Q (e.g., epsilon-greedy).
+       
+       *Choose action from next state using policy derived from Q (e.g., epsilon-greedy.
+       
        *Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]
+       
        *Update the state and action.
+       
     *Until state is terminal.
+    
 3.Until performance converges.
+
 4.Return Q.
 
 ## Q LEARNING FUNCTION:
